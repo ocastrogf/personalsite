@@ -24,9 +24,13 @@
 <ul id="menu" class="bg-blue dker">
 	<li class="nav-header">Menu</li>
 	<li class="nav-divider"></li>
-	<li class=""><a href="{{ URL::to('/admin/method') }}"> <i
+	<li class="${request.getRequestURI()} ">
+
+		<g:link mapping="admin_dashboard">
+			<i
 			class="fa fa-dashboard"></i><span class="link-title">&nbsp;Dashboard</span>
-	</a></li>
+		</g:link>
+	</li>
 	<li class="active"><a href="javascript:;"> <i
 			class="fa fa-building "></i> <span class="link-title">Layouts</span>
 			<span class="fa arrow"></span>

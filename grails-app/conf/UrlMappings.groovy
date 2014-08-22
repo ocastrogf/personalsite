@@ -6,6 +6,10 @@ class UrlMappings {
                 // apply constraints here
             }
         }
+		name admin_dashboard : "/admin" {
+			controller ='admin'
+			action	='index'
+		}
 
         "/"(controller: "admin", action: "index")
         "500"(view:'/error')
